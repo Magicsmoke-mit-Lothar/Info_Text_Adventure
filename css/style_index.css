@@ -1,0 +1,38 @@
+* {
+    font-family: 'Arial', sans-serif;
+    color: #d4d4d4; /* Text color */
+    /* Add more common text styling properties as needed */
+}
+h1 {
+    text-align: center;
+    font-size: 6em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../resources/images/startBackround.webp"); /* Replace 'your-background-image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* This ensures that the background covers the entire height of the viewport */
+}
+
+.startButton{
+    margin-top: 20%;
+    color: rgb(0, 255, 42);
+    background-color: #100952;
+    border: none;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 2em;
+    outline: none;
+    border-radius: 20px;
+    height: 100px;
+    width: 200px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 900;
+}
+.startButton:hover{
+    background-color: #ff0000;
+}
