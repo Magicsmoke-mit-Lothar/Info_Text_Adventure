@@ -2,3 +2,27 @@
     color: 	rgb(190, 187, 187);
     font-family: 'Arial', sans-serif;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(32, 52, 52);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Make sure the body takes the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+.container {
+    flex: 1; /* Allow the container to grow and take available space */
+    display: flex;
+    flex-direction: space-between;
+}
