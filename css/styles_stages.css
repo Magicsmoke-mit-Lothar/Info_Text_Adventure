@@ -4,16 +4,24 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(32, 52, 52);
+    background-image: url("../resources/images/startBackround.webp"); /* Replace 'your-background-image.jpg' with the path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh; /* Make sure the body takes the full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.quiz-container{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-end; */
+    align-items:center;
+    gap:1vh;
+        
 }
 
 h1 {
@@ -25,4 +33,19 @@ h1 {
     flex: 1; /* Allow the container to grow and take available space */
     display: flex;
     flex-direction: space-between;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

@@ -3,40 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
-
-        #quiz-container {
-            max-width: 600px;
-            margin: auto;
-        }
-
-        .question {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            margin: 5px;
-        }
-
-        #result {
-            margin-top: 20px;
-            font-weight: bold;
-        }
-    </style>
+    <title>LVL. 1</title>
+    <style></style>
+    <link rel="stylesheet" href="../css/styles_stages.css">
 </head>
 <body>
-    <div id="quiz-container">
+    <div id="quiz-container" class="quiz-container">
         <div id="question-container" class="question">1. What is the capital of France?</div>
         <button class="btn" onclick="checkAnswer('Paris')">Paris</button>
         <button class="btn" onclick="checkAnswer('Berlin')">Berlin</button>
@@ -53,7 +25,7 @@
             if (userAnswer === correctAnswer) {
                 resultContainer.innerHTML = "Correct!";
             } else {
-                resultContainer.innerHTML = "Incorrect. The correct answer is Paris.";
+                resultContainer.innerHTML = "Incorrect.";
             }
         }
     </script>
