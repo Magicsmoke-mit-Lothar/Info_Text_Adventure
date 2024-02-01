@@ -9,8 +9,6 @@ h1 {
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background-image: url("../resources/images/startBackround.webp"); /* Replace 'your-background-image.jpg' with the path to your image */
     background-size: cover;
     background-position: center;
@@ -18,23 +16,27 @@ body {
     height: 100vh; /* Make sure the body takes the full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items:center;
+    gap: 50vh;
+
 }
 
 .startButton{
     margin-bottom: 10%;
     color: rgb(0, 255, 42);
     background-color: #100952;
-    border: none;
+    border: transparent;
     overflow: hidden;
     text-decoration: none;
     font-size: 2em;
-    outline: none;
     border-radius: 20px;
     height: 100px;
     width: 200px;
     font-family: 'Arial', sans-serif;
     font-weight: 900;
+
+
 }
 .startButton:hover{
     background-color: #ff0000;
@@ -44,8 +46,19 @@ body {
     display: none;
   }
 .alignBottom {
-    flex: 1; /* Allow the container to grow and take available space */
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; /* Align items to the bottom */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    }
+
+.headerBUtton{
+    border-color: transparent;
+    color: #100952;
+}
+.headerBUtton:hover{
+    color: antiquewhite;
 }

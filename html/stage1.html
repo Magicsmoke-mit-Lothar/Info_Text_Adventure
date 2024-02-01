@@ -3,16 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 1</title>
-    <style></style>
-    <link rel="stylesheet" href="../css/styles_stages.css">
+    <title>Quiz Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #quiz-container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .question {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <button>HOME</button>
-        <h1> HTML-Adventure</h1>
-        <button>Lvl. 1</button>
+    <div id="quiz-container">
+        <div id="question-container" class="question">1. What is the capital of France?</div>
+        <button class="btn" onclick="checkAnswer('Paris')">Paris</button>
+        <button class="btn" onclick="checkAnswer('Berlin')">Berlin</button>
+        <button class="btn" onclick="checkAnswer('London')">London</button>
+
+        <div id="result"></div>
     </div>
-    <main></main>
+
+    <script>
+        function checkAnswer(userAnswer) {
+            var correctAnswer = "Paris";
+            var resultContainer = document.getElementById("result");
+
+            if (userAnswer === correctAnswer) {
+                resultContainer.innerHTML = "Correct!";
+            } else {
+                resultContainer.innerHTML = "Incorrect. The correct answer is Paris.";
+            }
+        }
+    </script>
 </body>
 </html>
