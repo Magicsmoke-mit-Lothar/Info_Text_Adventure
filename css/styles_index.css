@@ -14,6 +14,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh; /* Make sure the body takes the full viewport height */
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -23,7 +26,7 @@ body {
 }
 
 .startButton{
-    margin-bottom: 10%;
+    margin-bottom: 10vh;
     color: rgb(0, 255, 42);
     background-color: #100952;
     border: transparent;

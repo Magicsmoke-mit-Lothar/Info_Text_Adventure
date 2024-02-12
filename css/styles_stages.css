@@ -1,3 +1,7 @@
+html {
+    height: -webkit-fill-available; /* We have to fix html height */
+}
+
 * {
     color: 	rgb(190, 187, 187);
     font-family: 'Arial', sans-serif;
@@ -8,20 +12,12 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Make sure the body takes the full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    min-height: 100vh;
+    min-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
     align-items:center;
-}
-
-.quiz-container{
-    display: flex;
-    flex-direction: column;
-    /*justify-content: flex-end; */
-    align-items:center;
-    gap:1vh;
-        
 }
 
 h1 {
@@ -29,23 +25,35 @@ h1 {
     font-size: 4em;
 }
 
-.container {
-    flex: 1; /* Allow the container to grow and take available space */
+.quiz-container{
     display: flex;
-    flex-direction: space-between;
-}
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-end;
+    height: 50vh;
+    width: 100vw;
+
+
+    }
+
+
 
 .btn {
-    display: inline-block;
-    padding: 15px 30px;
     font-size: 1.2em;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border: 2px solid #3498db;
+    border: transparent;
     color: #fff;
-    background-color: #3498db;
-    border-radius: 8px;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 40vw;
+    height: 10vh;
+    
 }
+
+.btn:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+
+

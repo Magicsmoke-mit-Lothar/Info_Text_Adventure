@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LVL. 1</title>
-    <style></style>
-    <link rel="stylesheet" href="../css/styles_stages.css">
-</head>
-<body>
-    <div id="quiz-container" class="quiz-container">
-        <div id="question-container" class="question">1. What is the capital of France?</div>
-        <button class="btn" onclick="checkAnswer('Paris')">Paris</button>
-        <button class="btn" onclick="checkAnswer('Berlin')">Berlin</button>
-        <button class="btn" onclick="checkAnswer('London')">London</button>
-
-        <div id="result"></div>
-    </div>
-
-    <script>
-        function checkAnswer(userAnswer) {
-            var correctAnswer = "Paris";
-            var resultContainer = document.getElementById("result");
-
-            if (userAnswer === correctAnswer) {
-                resultContainer.innerHTML = "Correct!";
-            } else {
-                resultContainer.innerHTML = "Incorrect.";
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LVL. 1</title>
+        <style>
+            body {
+                background-image: url("../resources/images/startBackround.webp");
+                
             }
-        }
-    </script>
-</body>
+        </style>
+        <link rel="stylesheet" href="/css/styles_stages.css">
+    </head>
+    <body>
+        <div style="height: 50vh; width: 100vw;"></div>
+        <div id="quiz-container" class="quiz-container">
+            <div id="question-container" class="question">1. What is the capital of France?</div>
+            <input class="btn" type="image" src="/resources/images/answerA.png" alt="" onclick="checkAnswer('Paris')">
+            <input class="btn" type="image" src="/resources/images/answerB.png" alt="" onclick="checkAnswer('Paris')">
+            <input class="btn" type="image" src="/resources/images/answerC.png" alt="" onclick="checkAnswer('Paris')">
+
+            <div id="result"></div>
+        </div>
+    </body>
 </html>
