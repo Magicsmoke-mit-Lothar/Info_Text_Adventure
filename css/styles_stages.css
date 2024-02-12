@@ -8,12 +8,11 @@ html {
 }
 
 body {
-    background-image: url("../resources/images/startBackround.webp"); /* Replace 'your-background-image.jpg' with the path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: 100svh;
+    min-width: 100svw;
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -30,13 +29,16 @@ h1 {
     flex-direction: column;
     justify-content: flex-start;
     align-items:flex-end;
-    height: 50vh;
-    width: 100vw;
+    gap: 0.5svh;
+}
 
-
-    }
-
-
+.quiz-button-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50svh;
+    width: 100svw;
+}
 
 .btn {
     font-size: 1.2em;
