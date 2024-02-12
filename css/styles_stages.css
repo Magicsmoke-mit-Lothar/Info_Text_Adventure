@@ -26,18 +26,21 @@ h1 {
 
 .quiz-container{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items:flex-end;
-    gap: 0.5svh;
+    flex-direction: row;
+    /*justify-content: flex-start;
+    /*align-items: center; */
+    height: 50svh;
+    width: 100svw;
 }
 
 .quiz-button-container{
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    height: 50svh;
-    width: 100svw;
+    align-items:flex-end;
+    gap: 0.5svh;
+    width: 50svw;
+    height: 50svh
 }
 
 .btn {
@@ -52,9 +55,16 @@ h1 {
     
 }
 
+
 .btn:hover {
     opacity: 0.9;
     transition: opacity 0.2s;
+}
+
+.quiz {
+    background-color: aqua;
+    width: 50svw;
+    height: 50svh
 }
 
 
