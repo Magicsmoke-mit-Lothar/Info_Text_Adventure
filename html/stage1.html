@@ -12,17 +12,49 @@
         </style>
         <link rel="stylesheet" href="/css/styles_stages.css">
     </head>
+    <header>
+        <div id="top-bar">
+            <div class="top-bar-buttons">
+                <div class="top-bar-buttons-left">
+                    <button>test</button>
+                </div>
+                <div class="top-bar-buttons-right">
+                    <button id="LVL-button">LVL.1</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="windowContainer">
+        <div id="windowContent">
+            <!-- Window Content Goes Here -->
+            <button id="closeWindow">Close</button>
+        </div>
+    </div>
     <body>
         <div style="height: 50vh; width: 100vw;"></div>
-        <div class="quiz">nigga</div>
+
         <div id="quiz-container" class="quiz-container">
+            <div class="question-container">
+                <div class="question-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, mollitia saepe! Ea non excepturi adipisci porro velit tempore dolores doloremque rerum? Repellat veritatis a in ab delectus recusandae illum totam.
+                </div>
+            </div>
+
             <div class="quiz-button-container">
-                <div id="question-container" class="question">1. What is the capital of France?</div>
                 <input class="btn" type="image" src="/resources/images/answerA.png" alt="" onclick="checkAnswer('Paris')">
                 <input class="btn" type="image" src="/resources/images/answerB.png" alt="" onclick="checkAnswer('Paris')">
                 <input class="btn" type="image" src="/resources/images/answerC.png" alt="" onclick="checkAnswer('Paris')">
                 <div id="result"></div>
             </div>
         </div>
+        <script>
+            document.getElementById("LVL-button").addEventListener("click", function() {
+            document.getElementById("windowContainer").style.right = "0";
+            });
+
+            document.getElementById("closeWindow").addEventListener("click", function() {
+            document.getElementById("windowContainer").style.right = "-300px";
+            });
+        </script>
     </body>
 </html>
