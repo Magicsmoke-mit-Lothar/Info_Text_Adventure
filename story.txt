@@ -8,28 +8,39 @@ Aufgabe um den Keller zu Verlassen und ins Treppenhaus zu gelangen. (muss die Pe
 #Schlüssel hinter stein 
 #Es gibt drei steine und du musst eine richtigen wählen ( was sucht die wolke #wenn es juckt. Einen wolkenkratzter R / einen rückenkratzter /Medi gegen #juckreiz )
 
-LVL.2
+LVL.2 --> Justin
 Du kommst raus ins Treppenhaus
 Du siehst ein Lehrer(z.B. Herr Rublack Mathe Frage oder so) im Treppenhaus er stellt dir eine Rätsel welches du lösen musst damit er dir den Schlüssel gibt womit du oben aufs Dach kommst 
 Das Dach ist vereist du kommst leider nicht durch weshalb du zu den LER Räumen gehst.	
 
-LVL.3
+LVL.3 --> Kuba
 Du musst durch die Tür zu den LER Räumen
 Du brauchst etwas um die tür zu öfnen
 #denk dir eine Aufgabe/Rätsel selbst aus um in den Flur zu gelangen
-
-LVL.4
+ 
+LVL.4 --> Christoph
 Jetzt bist du im flur 
 Im Flur wo die frz räume sind musst du eine entscheidung treffen ob du die treppe runter gehst oder weiter zu cafererierer läufst
 #Hier bitte kein Rätsel es muss geraten werden.
 #wer diese Aufgabe nimmt kriegt es nochmal erklärt
 
-LVL.5
+LVL.5 --> Paul
 Wenn du zur Cafeteria läufst schcikt dich herr sydow weg weil er denkt das du es warst der den flur dreckig gemacht hat
 Wenn du die treppe runter läufst bist du in der nähe der Info räume wo du Herr Möller triffst er fragt dich
 Was ist Filmmusik?
 und
 Was mach die range() funktion in python?
+
+LVL.6 --> Laurenz
+Die Tür zum Ausgang ist versclossen.
+Du versucht
+
+LVL.7 --> Meyer
+Du hast es geschafft leider wartet Frau Gatzt vor dem Tor du brachst ein Fahrrad um schnell genug zu entkommen.
+Du siehst ein Canyon Torque doch es hat ein Zahlenschloss.
+#denk dir eine Aufgabe/ein Rätsel selbst aus
+
+
 
 der dir einen schlüssel gibt 
 damit du durch die tür in den Sekriteriat Flur kommst.
