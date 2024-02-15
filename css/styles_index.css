@@ -1,6 +1,6 @@
 * {
     font-family: 'Arial', sans-serif;
-    color: #d4d4d4; /* Text color */
+    color: #0cc9ab; /* Text color */
     /* Add more common text styling properties as needed */
 }
 h1 {
@@ -27,9 +27,9 @@ body {
 
 .startButton{
     margin-bottom: 10vh;
-    color: rgb(0, 255, 42);
-    background-color: #100952;
-    border: transparent;
+    color: #0cc9ab;
+    background-color: #0b192e;
+    border: 5px solid transparent;
     overflow: hidden;
     text-decoration: none;
     font-size: 2em;
@@ -43,6 +43,7 @@ body {
 }
 .startButton:hover{
     background-color: #ff0000;
+    border: 5px solid #0cc9ab;
 }
 
 .hidden {

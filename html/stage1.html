@@ -4,57 +4,62 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LVL. 1</title>
-        <style>
-            body {
-                background-image: url("/resources/images/stage1_backround.jpg");
-                
-            }
-        </style>
-        <link rel="stylesheet" href="/css/styles_stages.css">
+        <link rel="stylesheet" href="../css/styles_stages.css">
     </head>
-    <header>
-        <div id="top-bar">
-            <div class="top-bar-buttons">
-                <div class="top-bar-buttons-left">
-                    <button>test</button>
-                </div>
-                <div class="top-bar-buttons-right">
+    <body>
+        <header>
+            <img class="header-image" src="../resources/images/stage1_backround.jpg" alt="Braille Planet">
+            <div id="top-bar">
+                <div class="top-bar-title"><a href="../html/index.html"><button class="home-button">HTML-Adventure</button></a></div>
+                <div class="top-bar-buttons">
+                    <button id="help-button">?</button>
                     <button id="LVL-button">LVL.1</button>
                 </div>
             </div>
-        </div>
-    </header>
-    <div id="windowContainer">
-        <div id="windowContent">
-            <!-- Window Content Goes Here -->
-            <button id="closeWindow">Close</button>
-        </div>
-    </div>
-    <body>
-        <div style="height: 50vh; width: 100vw;"></div>
 
-        <div id="quiz-container" class="quiz-container">
-            <div class="question-container">
-                <div class="question-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, mollitia saepe! Ea non excepturi adipisci porro velit tempore dolores doloremque rerum? Repellat veritatis a in ab delectus recusandae illum totam.
+            <div id="windowContainer">
+                <div id="windowContent">
+                    <button id="closeWindow"><img src="../resources/images/navigate-back-arrow.png" alt="Close LVL Overview" width="20%">Level Overview</button>
+                    <button class="LVL-buttons">Level 1</button>
+                    <button class="LVL-buttons">Level 2</button>
+                    <button class="LVL-buttons">Level 3</button>
+                    <button class="LVL-buttons">Level 4</button>
+                    <button class="LVL-buttons">Level 5</button>
+                    <button class="LVL-buttons">Level 6</button>
+                    <button class="LVL-buttons">Level 7</button>
                 </div>
             </div>
 
-            <div class="quiz-button-container">
-                <input class="btn" type="image" src="/resources/images/answerA.png" alt="" onclick="checkAnswer('Paris')">
-                <input class="btn" type="image" src="/resources/images/answerB.png" alt="" onclick="checkAnswer('Paris')">
-                <input class="btn" type="image" src="/resources/images/answerC.png" alt="" onclick="checkAnswer('Paris')">
-                <div id="result"></div>
+            <div class="header-content">
+                <div id="top-bar-spacer"></div>
+                <h1>Du bist gefangen !!!</h1>
             </div>
-        </div>
-        <script>
-            document.getElementById("LVL-button").addEventListener("click", function() {
-            document.getElementById("windowContainer").style.right = "0";
-            });
 
-            document.getElementById("closeWindow").addEventListener("click", function() {
-            document.getElementById("windowContainer").style.right = "-300px";
-            });
-        </script>
+        </header>
+
+        <main>
+            <div class="quiz-content">
+                <div id="quiz-container" class="quiz-container">
+                    <div class="question-container">
+                        <div class="question-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, mollitia saepe! Ea non excepturi adipisci porro velit tempore dolores doloremque rerum? Repellat veritatis a in ab delectus recusandae illum totam.
+                        </div>
+                    </div>
+                    <div class="quiz-button-container">
+                        <input class="btn" type="image" src="../resources/images/answerA.png" alt="" onclick="checkAnswer('a')">
+                        <input class="btn" type="image" src="../resources/images/answerB.png" alt="" onclick="checkAnswer('b')">
+                        <input class="btn" type="image" src="../resources/images/answerC.png" alt="" onclick="checkAnswer('c')">
+                        <div id="timer" class="warning-text">Remaining time: <span id="remainingSeconds"></span> seconds</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+
+        </footer>
+        <script src="../js/stage1.js"></script>
+        <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
     </body>
 </html>
