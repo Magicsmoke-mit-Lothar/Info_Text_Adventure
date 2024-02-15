@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LVL. 1</title>
         <link rel="stylesheet" href="../css/styles_stages.css">
+        <link rel="stylesheet" href="../css/styles_stage1.css">
     </head>
     <body>
         <header>
@@ -45,11 +46,11 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, mollitia saepe! Ea non excepturi adipisci porro velit tempore dolores doloremque rerum? Repellat veritatis a in ab delectus recusandae illum totam.
                         </div>
                     </div>
-                    <div class="quiz-button-container">
-                        <input class="btn" type="image" src="../resources/images/answerA.png" alt="" onclick="checkAnswer('a')">
-                        <input class="btn" type="image" src="../resources/images/answerB.png" alt="" onclick="checkAnswer('b')">
-                        <input class="btn" type="image" src="../resources/images/answerC.png" alt="" onclick="checkAnswer('c')">
-                        <div id="timer" class="warning-text">Remaining time: <span id="remainingSeconds"></span> seconds</div>
+                    <div id="quiz-button-container">
+                        <input id="ansbtnA" class="btn" type="image" src="../resources/images/answerA.png" alt="" onclick="checkAnswer('a')">
+                        <input id="ansbtnB" class="btn" type="image" src="../resources/images/answerB.png" alt="" onclick="checkAnswer('b')">
+                        <input id="ansbtnC" class="btn" type="image" src="../resources/images/answerC.png" alt="" onclick="checkAnswer('c')">
+                        <div id="timer" class="warning-text hidden">Remaining time: <span id="remainingSeconds"></span> seconds</div>
                     </div>
                 </div>
             </div>

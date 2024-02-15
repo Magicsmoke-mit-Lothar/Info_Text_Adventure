@@ -12,11 +12,9 @@ let lastScrollTop = 0;
 window.addEventListener("scroll", function() {
   let currentScroll = window.pageYOffset3 || document.documentElement.scrollTop;
   if (currentScroll > lastScrollTop) {
-    console.log("Scroll down");
     document.getElementById("top-bar").classList.add("hidden");
     document.getElementById("top-bar").style.top = "-10svh";
   } else {
-    console.log("Scroll up");
     document.getElementById("top-bar").classList.remove("hidden");
     document.getElementById("top-bar").style.top = "0";
   }
@@ -28,48 +26,59 @@ window.addEventListener("scroll", function() {
 
 // Function to set countdown timer duration in seconds and return the remaining seconds
 function setCountdown(seconds) {
-  // Calculate the end time based on the provided duration in seconds
-  const countDownDate = new Date().getTime() + (seconds * 1000);
-
   // Return a function that calculates and updates the remaining seconds
   return function() {
-    // Get the current date and time
-    const now = new Date().getTime();
+    // Calculate the end time based on the provided duration in seconds
+    const countDownDate = new Date().getTime() + (seconds * 1000);
 
-    // Calculate the time remaining
-    const distance = countDownDate - now;
+    // Update the countdown every second
+    const countdown = setInterval(function() {
+      // Get the current date and time
+      const now = new Date().getTime();
 
-    // Calculate remaining seconds
-    const remainingSeconds = Math.floor(distance / 1000);
+      // Calculate the time remaining
+      const distance = countDownDate - now;
 
-    // Update the HTML content to display the remaining seconds
-    document.getElementById("remainingSeconds").textContent = remainingSeconds;
+      // Calculate remaining seconds
+      let remainingSeconds = Math.floor(distance / 1000);
 
-    // If the countdown is finished, display a message
-    if (distance < 0) {
-      clearInterval(countdown);
-      document.getElementById("timer").innerHTML = "EXPIRED";
-    }
+      // Update the HTML content to display the remaining seconds only if they are greater than or equal to zero
+      if (remainingSeconds >= 0) {
+        document.getElementById("remainingSeconds").textContent = remainingSeconds;
+        document.getElementById("timer").classList.remove("hidden");
+      } else {
+        document.getElementById("remainingSeconds").textContent = '0';
+      }
+
+      // If the countdown is finished, display a message and clear the interval
+      if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("ansbtnA").classList.remove("hidden");
+        document.getElementById("ansbtnB").classList.remove("hidden");
+        document.getElementById("ansbtnC").classList.remove("hidden");
+        document.getElementById("timer").classList.add("hidden");
+      }
+    },0);
   };
 }
 
 // Example usage: set the countdown timer to 60 seconds
-//const getRemainingSeconds = setCountdown(60);
-
-// Update the remaining seconds every secon
 let getRemainingSeconds;
+getRemainingSeconds();
 
 
 
 function checkAnswer(ans) {
+  console.log(ans);
   if(ans == "a"){
-    window.location.pathname = "../html/index.html/";
+    window.location.href = "stage2.html";
+    document.getElementById("timer").classList.add("hidden");
   }
   else{
-    getRemainingSeconds = setCountdown(60);
+    getRemainingSeconds = setCountdown(31);
+    getRemainingSeconds();
+    document.getElementById("ansbtnA").classList.add("hidden");
+    document.getElementById("ansbtnB").classList.add("hidden");
+    document.getElementById("ansbtnC").classList.add("hidden");
   }
 }
-
-const countdown = setInterval(function() {
-  getRemainingSeconds();
-}, 10);
