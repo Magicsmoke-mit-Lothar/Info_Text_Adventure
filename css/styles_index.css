@@ -3,9 +3,38 @@
     color: #0cc9ab; /* Text color */
     /* Add more common text styling properties as needed */
 }
+
+@keyframes colorRotate {
+    10% {
+      background-color: #ff0000;
+    }
+    50% {
+      background-color: #00ff00;
+    }
+    75% {
+      background-color: #f6ff00;
+    }
+    100% {
+      background-color: #0000ff;
+    }
+  }
+
+@keyframes redFlash {
+    50% {
+        background-color: #ff0000;
+      }
+    100% {
+        background-color: #580e0e;
+      }
+}
+
 h1 {
     text-align: center;
     font-size: 6em;
+}
+
+.redFlash{
+    animation: redFlash 1s ease-in-out infinite;
 }
 
 body {
@@ -42,7 +71,8 @@ body {
 
 }
 .startButton:hover{
-    background-color: #ff0000;
+    animation: colorRotate 2s linear 0s infinite;
+
     border: 5px solid #0cc9ab;
 }
 
