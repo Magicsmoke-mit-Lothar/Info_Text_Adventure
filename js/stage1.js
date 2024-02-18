@@ -1,3 +1,22 @@
+/*let actButton = false;
+window.onbeforeunload = function() {
+  if(actButton == false){
+    actButton = true;
+    window.location.href = "index.html";
+    //console.log("You cheated!");
+    return "Don't cheat";
+  }
+};
+*/
+
+window.onload = function() {
+  // Check if the page is being reloaded
+  if (performance.getEntriesByType("navigation")[0].type === "reload" || (performance.getEntriesByType("navigation")[0].type === "navigate" && distance > 0)) {
+    // Page is being reloaded, redirect the user to a different page
+    window.location.href = 'index.html'; // Replace 'new_page.html' with the URL of the page you want to redirect to
+  }
+};
+
 document.getElementById("LVL-button").addEventListener("click", function() {
 document.getElementById("windowContainer").style.right = "0";
 });
@@ -68,10 +87,11 @@ getRemainingSeconds();
 
 
 
-function checkAnswer(ans) {
+function checkAnswer(ans, lvl, rightAns) {
   console.log(ans);
-  if(ans == "a"){
-    window.location.href = "stage2.html";
+  if(ans == rightAns){
+    let nlvl = lvl + 1;
+    window.location.href = "stage" + nlvl + ".html";
     document.getElementById("timer").classList.add("hidden");
   }
   else{
@@ -81,4 +101,12 @@ function checkAnswer(ans) {
     document.getElementById("ansbtnB").classList.add("hidden");
     document.getElementById("ansbtnC").classList.add("hidden");
   }
+}
+
+function displayRules(){
+  document.getElementById("rules").classList.remove("hidden");
+}
+
+function hideRules(){
+  document.getElementById("rules").classList.add("hidden");
 }

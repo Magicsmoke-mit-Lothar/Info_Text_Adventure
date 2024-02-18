@@ -1,3 +1,7 @@
+window.onbeforeunload = function() {
+  return "Don't cheat";
+};
+
 function changeText(text, text_alt) {
     // Hide the original button text
       document.getElementById(text).style.display = "none";

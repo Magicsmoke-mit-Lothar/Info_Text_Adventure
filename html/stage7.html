@@ -15,20 +15,20 @@
       <div class="top-bar-title"><a href="../html/index.html"><button class="home-button">HTML-Adventure</button></a></div>
       <div class="top-bar-buttons">
         <button id="help-button">?</button>
-        <button id="LVL-button">LVL.3</button>
+        <button id="LVL-button">LVL.7</button>
       </div>
     </div>
 
     <div id="windowContainer">
       <div id="windowContent">
         <button id="closeWindow"><img src="../resources/images/navigate-back-arrow.png" alt="Close LVL Overview" width="20%">Level Overview</button>
-        <button class="LVL-buttons">Level 1</button>
-        <button class="LVL-buttons">Level 2</button>
-        <button class="LVL-buttons">Level 3</button>
-        <button class="LVL-buttons">Level 4</button>
-        <button class="LVL-buttons">Level 5</button>
-        <button class="LVL-buttons">Level 6</button>
-        <button class="LVL-buttons">Level 7</button>
+        <a href="stage1.html" class="level-completed"><button class="LVL-buttons">Level 1</button></a>
+        <a href="stage2.html" class="level-completed"><button class="LVL-buttons">Level 2</button></a>
+        <a href="stage3.html" class="level-completed"><button class="LVL-buttons">Level 3</button></a>
+        <a href="stage4.html" class="level-completed"><button class="LVL-buttons">Level 4</button></a>
+        <a href="stage5.html" class="level-completed"><button class="LVL-buttons">Level 5</button></a>
+        <a href="stage6.html" class="level-completed"><button class="LVL-buttons">Level 6</button></a>
+        <a href="stage7.html" class="level-completed"><button class="LVL-buttons">Level 7</button></a>
       </div>
     </div>
 
@@ -46,9 +46,9 @@
               </div>
           </div>
           <div id="quiz-button-container">
-              <input id="ansbtnA" class="btn" type="image" src="../resources/images/answerA.png" alt="" onclick="checkAnswer('a')">
-              <input id="ansbtnB" class="btn" type="image" src="../resources/images/answerB.png" alt="" onclick="checkAnswer('b')">
-              <input id="ansbtnC" class="btn" type="image" src="../resources/images/answerC.png" alt="" onclick="checkAnswer('c')">
+              <input id="ansbtnA" class="btn" type="image" src="../resources/images/answerA.png" alt="" onclick="checkAnswer('a', 7, 'b')">
+              <input id="ansbtnB" class="btn" type="image" src="../resources/images/answerB.png" alt="" onclick="checkAnswer('b', 7, 'b')">
+              <input id="ansbtnC" class="btn" type="image" src="../resources/images/answerC.png" alt="" onclick="checkAnswer('c', 7, 'b')">
               <div id="timer" class="warning-text hidden">Remaining time: <span id="remainingSeconds"></span> seconds</div>
           </div>
       </div>
@@ -63,4 +63,4 @@
     <script src="../js/stage1.js"></script>
   </body>
 
-</html> 
+</html>
