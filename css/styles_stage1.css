@@ -8,6 +8,15 @@
   to { opacity: 1;}
 }
 
+@keyframes move-buttons{
+  from {opacity: 0; translate: 50svw;}
+  24% { opacity: 1; translate: 0svw;}
+}
+
+@keyframes bottom-left-text{
+  from {opacity: 0; translate: 50svh -50svw;}
+  24% {opacity: 1; translate: 0 0;}
+}
 
 body{
   min-height: 200svh;
@@ -39,5 +48,26 @@ header {
   animation-timeline: view();
   animation-range: exit;
   z-index: -1;
+}
 
+.btn{
+  animation: move-buttons linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+}
+
+.question-container{
+  animation: bottom-left-text linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+}
+
+#story-text{
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 10%;
+}
+
+.image-1{
+  border-radius: 10px;
 }

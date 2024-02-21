@@ -1,21 +1,11 @@
-/*let actButton = false;
-window.onbeforeunload = function() {
-  if(actButton == false){
-    actButton = true;
-    window.location.href = "index.html";
-    //console.log("You cheated!");
-    return "Don't cheat";
-  }
-};
-*/
-
 window.onload = function() {
   // Check if the page is being reloaded
-  if (performance.getEntriesByType("navigation")[0].type === "reload" || (performance.getEntriesByType("navigation")[0].type === "navigate" && distance > 0)) {
+  if (performance.getEntriesByType("navigation")[0].type === "reload") {
     // Page is being reloaded, redirect the user to a different page
+    alert("Don't try to cheat!");
     window.location.href = 'index.html'; // Replace 'new_page.html' with the URL of the page you want to redirect to
   }
-};
+};  
 
 document.getElementById("LVL-button").addEventListener("click", function() {
 document.getElementById("windowContainer").style.right = "0";
@@ -58,7 +48,6 @@ function setCountdown(seconds) {
       // Calculate the time remaining
       const distance = countDownDate - now;
 
-      // Calculate remaining seconds
       let remainingSeconds = Math.floor(distance / 1000);
 
       // Update the HTML content to display the remaining seconds only if they are greater than or equal to zero
@@ -81,7 +70,7 @@ function setCountdown(seconds) {
   };
 }
 
-// Example usage: set the countdown timer to 60 seconds
+
 let getRemainingSeconds;
 getRemainingSeconds();
 

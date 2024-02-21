@@ -94,23 +94,24 @@ height: 12svh;
 .question-container {
     display: flex;
     width: 50svw;
-    height: 50svh;
+    height: 100%;
     justify-content: center;
 }
 
 .question-text{
+  padding: 10%;
     text-align: center;
-    font-size: 2em;;
+    font-size: 1.5em;;
     font-weight: 700;
 }
 
 #quiz-button-container{
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:start;
     align-items:center;
     width: 50svw;
-    height: 50svh
+    height: 100%
 }
 
 .btn {
