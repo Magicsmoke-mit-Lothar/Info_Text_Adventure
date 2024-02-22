@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="../css/styles_stage2.css">
 </head>
  
-<body background="WhatsApp Image 2024-02-13 at 12.40.46.jpeg">
+<body>
 
   <header>
     <div id="top-bar">
@@ -59,9 +59,9 @@
               </div>
           </div>
           <div id="quiz-button-container">
-              <input id="ansbtnA" class="btn" type="image" src="../resources/images/answerA.png" alt="" onclick="checkAnswer('a')">
-              <input id="ansbtnB" class="btn" type="image" src="../resources/images/answerB.png" alt="" onclick="checkAnswer('b')">
-              <input id="ansbtnC" class="btn" type="image" src="../resources/images/answerC.png" alt="" onclick="checkAnswer('c')">
+              <input id="ansbtnA" class="btn" type="image" src="../resources/images/answerA.png" alt="" onclick="checkAnswer('a', 2, 'b')">
+              <input id="ansbtnB" class="btn" type="image" src="../resources/images/answerB.png" alt="" onclick="checkAnswer('b', 2, 'b')">
+              <input id="ansbtnC" class="btn" type="image" src="../resources/images/answerC.png" alt="" onclick="checkAnswer('c', 2, 'b')">
               <div id="timer" class="warning-text hidden">Remaining time: <span id="remainingSeconds"></span> seconds</div>
           </div>
       </div>

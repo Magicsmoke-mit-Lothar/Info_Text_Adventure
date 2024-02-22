@@ -1,0 +1,28 @@
+body{
+    background: url(../resources/images/stage3-background.jpg);
+    width: 100svw;
+    height: 100svh; 
+    overflow: hidden;
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-container{
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 15svw;
+}
+
+.quiz-content{
+    height: 68svh;
+}
+
+.warning-text{
+    margin: 5%;
+}
+

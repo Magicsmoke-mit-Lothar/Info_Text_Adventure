@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="../css/styles_stage3.css">
 </head>
  
-<body background="WhatsApp Image 2024-02-13 at 12.40.46.jpeg">
-
+<body>
   <header>
     <div id="top-bar">
       <div class="top-bar-title"><a href="../html/index.html"><button class="home-button">HTML-Adventure</button></a></div>
@@ -31,25 +30,28 @@
         <button class="LVL-buttons">Level 7</button>
       </div>
     </div>
-
-    <!--Mach hier die Header sachen rein Kopfzeile und so  lass das oben drüber-->
+    <div class="top-bar-spacer"></div>
+    <div style="height: 20svh; width: 100%;"></div>
+    <h2 style="width: 100svw; text-align: left; margin: 4%; color: black;">
+      Die Tür zu den LER Räumen ist zu. <br>
+      Wähle das richtige Werkzeug um die Tür zu öffnen.
+    </h2>
   </header>
 
 
   <main>
-    <!--Mach hier die Wichtigsten sachen rein z.B quiz-->
     <div class="quiz-content">
       <div id="quiz-container" class="quiz-container">
+        <div id="quiz-button-container">
+          <input width="30svw" id="ansbtnA" class="btn" type="image" src="../resources/images/Bohrmaschin.png" alt="" onclick="checkAnswer('a', 3, 'c')">
+          <input width="30svw" id="ansbtnB" class="btn" type="image" src="../resources/images/Schraubenzieher.png" alt="" onclick="checkAnswer('b', 3, 'c')">
+          <input width="30svw" id="ansbtnC" class="btn" type="image" src="../resources/images/Brechstange.png" alt="" onclick="checkAnswer('c', 3, 'c')">
+          <div id="timer" class="warning-text hidden">
+            Damit kommst du leider nicht durch: <span id="remainingSeconds"></span> seconds remaining</div>
+          </div>
           <div class="question-container">
               <div class="question-text">
-                  <!--heir kommt deine Frage hin-->
               </div>
-          </div>
-          <div id="quiz-button-container">
-              <input id="ansbtnA" class="btn" type="image" src="../resources/images/answerA.png" alt="" onclick="checkAnswer('a', 3, 'a')">
-              <input id="ansbtnB" class="btn" type="image" src="../resources/images/answerB.png" alt="" onclick="checkAnswer('b')">
-              <input id="ansbtnC" class="btn" type="image" src="../resources/images/answerC.png" alt="" onclick="checkAnswer('c')">
-              <div id="timer" class="warning-text hidden">Remaining time: <span id="remainingSeconds"></span> seconds</div>
           </div>
       </div>
   </div>
@@ -60,7 +62,9 @@
   </footer>
 
 
-    <script src="../js/stage1.js"></script>
+    <script defer src="../js/stages.js"></script>
+    <script defer src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+
   </body>
 
 </html> 

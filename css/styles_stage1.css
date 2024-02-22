@@ -71,3 +71,8 @@ header {
 .image-1{
   border-radius: 10px;
 }
+
+#images{
+  display: flex;
+  justify-content: space-evenly;
+}
