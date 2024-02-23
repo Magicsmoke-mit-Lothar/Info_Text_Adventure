@@ -1,11 +1,20 @@
 body {
-    color:     rgb(255, 255, 255);
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
+  background: url(../resources/images/stage2-bg.jpg);
+  color:     rgb(255, 255, 255);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .h1 {
-    color:black; 
-  }
+.h1 {
+  color:black; 
+}
+
+.btn{
+  height: 10svh;
+}
+.cstm-spacer{
+  height: 50svh;
+  width: 100%;
+}

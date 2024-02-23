@@ -115,7 +115,7 @@ height: 12svh;
 }
 
 .btn {
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -129,7 +129,6 @@ height: 12svh;
 .btn:hover {
     opacity: 0.2;
     transition: opacity 0.2s;
-    border: 5px solid #0cc9ab;
 }
 
 .warning-text{
@@ -237,4 +236,20 @@ height: 12svh;
 .LVL-menu-title{
   display: flex;
 
+}
+
+#ansbtnA{
+  background: url(../resources/images/answerA.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#ansbtnB{
+  background: url(../resources/images/answerB.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#ansbtnC{
+  background: url(../resources/images/answerC.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }

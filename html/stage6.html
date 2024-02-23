@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt HTML</title>
+  <link rel="stylesheet" href="../css/styles_stages.css">
+  <link rel="stylesheet" href="../css/styles_stage6.css">
+</head>
+ 
+<body>
+
+  <header>
+    <div id="top-bar">
+      <div class="top-bar-title"><a href="../html/index.html"><button class="home-button">HTML-Adventure</button></a></div>
+      <div class="top-bar-buttons">
+        <button id="help-button">?</button>
+        <button id="LVL-button">LVL.6</button>
+      </div>
+    </div>
+
+    <div id="windowContainer">
+      <div id="windowContent">
+        <button id="closeWindow"><img src="../resources/images/navigate-back-arrow.png" alt="Close LVL Overview" width="20%">Level Overview</button>
+        <a href="stage1.html" class="level-completed"><button class="LVL-buttons">Level 1</button></a>
+        <a href="stage2.html" class="level-completed"><button class="LVL-buttons">Level 2</button></a>
+        <a href="stage3.html" class="level-completed"><button class="LVL-buttons">Level 3</button></a>
+        <a href="stage4.html" class="level-completed"><button class="LVL-buttons">Level 4</button></a>
+        <a href="stage5.html" class="level-completed"><button class="LVL-buttons">Level 5</button></a>
+        <a href="stage6.html" class="level-completed"><button class="LVL-buttons">Level 6</button></a>
+        <button class="LVL-buttons">Level 7</button>
+      </div>
+    </div>
+
+    <!--Mach hier die Header sachen rein Kopfzeile und so  lass das oben drüber-->
+
+  
+  </header>
+
+
+  <main>
+    <!--Mach hier die Wichtigsten sachen rein z.B quiz-->
+    <div class="quiz-content">
+      <div id="quiz-container" class="quiz-container">
+          <div class="question-container">
+              <div class="question-text">
+                Du bist beim ausgang angelangt du siehst den Putzwagen der Putzfrau auf diesem befindet sich ein Tresor in dem
+                sich der Schlüssel für die Tür befindet löse folgendes Fibonacci rätsel um den 
+                Code für den Safe heraus zu finden<ul class="fibonacci-list" id="fibonacciSequence">
+                  <!-- Hier kannst du die Fibonacci-Folge definieren -->
+                  <li>0</li>
+                  <li>1</li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>5</li>
+                  <li>8</li>
+              </ul>
+              </div>
+          </div>
+          <div id="quiz-button-container">
+              <button id="ansbtnA" class="btn" alt="" onclick="checkAnswer('a', 6, 'a')">Der Code ist  13 21 34 55 89 144 233 377 </button>
+              <button id="ansbtnB" class="btn" alt="" onclick="checkAnswer('b', 6, 'a')">Der Code ist 1234567</button>
+              <button id="ansbtnC" class="btn" alt="" onclick="checkAnswer('c', 6, 'a')">Der Code ist 847563</button>
+              
+              
+
+              
+            
+              <div id="timer" class="warning-text hidden">Remaining time: <span id="remainingSeconds"></span> seconds</div>
+          </div>
+      </div>
+  </div>
+  </main>
+
+  <footer>
+    <!--Mach hier die Fußzeilen sachen rein Wer hat die seite gamacht und so-->
+  </footer>
+
+
+    <script src="../js/stage1.js"></script>
+    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+  </body>
+
+</html>

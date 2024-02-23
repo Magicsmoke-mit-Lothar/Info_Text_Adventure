@@ -18,6 +18,12 @@
   24% {opacity: 1; translate: 0 0;}
 }
 
+@keyframes top-right-text{
+  from {opacity: 1;}
+  24% {opacity: 0; translate: -50svh 50svw;}
+  to {opacity: 0; translate: -50svh 50svw;}
+}
+
 body{
   min-height: 200svh;
   background-color: black;
@@ -50,10 +56,21 @@ header {
   z-index: -1;
 }
 
+#story-text{
+  animation: top-right-text linear forwards;
+  animation-timeline: view();
+  animation-range-start: exit;
+}
+
 .btn{
   animation: move-buttons linear;
   animation-timeline: view();
   animation-range-start: cover;
+  height: 10svh;
+}
+
+.btn:hover{
+  border: 5px solid #0cc9ab;
 }
 
 .question-container{

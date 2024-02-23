@@ -1,0 +1,29 @@
+body{
+    background: url(../resources/images/stage4_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100svh;
+}
+#ansbtnA{
+    position:absolute;
+    top:50%;
+    left:80%;
+    width:100px;
+    height:100px;
+}
+      
+#ansbtnB{
+    position:absolute;
+    top:60%;
+    left:500px;
+    width:100px;
+    height:100px;
+}      
+#bild3{
+    position:absolute;
+    top:42%;
+    left:82%;
+    width:75px;
+    height:75px;
+    z-index: -1;
+}      

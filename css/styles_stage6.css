@@ -1,0 +1,87 @@
+body{
+    background: url(../resources/images/stage6-bg.png);
+    height: 100svh;
+    width: 100svw;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+
+
+.main-content{
+    height: 50svh;
+    width: 100%;
+}
+
+#quiz-button-container{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.fibonacci-container {
+    text-align: center;
+}
+.fibonacci-list {
+    list-style-type: none;
+    padding: 0;
+}
+.fibonacci-list li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    margin-right: 5px;
+}
+.fibonacci-input {
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.fibonacci-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+.fibonacci-button:hover {
+    background-color: #45a049;
+}
+
+div.inputbutton {
+    position: relative;
+    display: inline-block;
+  }
+  
+  div.inputbutton input {
+    background: url('http://placehold.it/200x100') no-repeat;
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    border: none;
+  }
+  
+  span.text {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+.btn{font-weight: 1000;}

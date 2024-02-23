@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    color: azure;
+    margin: 0;
+    padding: 0;
+    background: url(../resources/images/ende-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    text-align: center;
+    margin-top: 20%;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    color: #dacccc;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.emojis {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
