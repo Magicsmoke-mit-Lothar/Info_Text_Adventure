@@ -34,7 +34,17 @@
             <div class="header-content">
                 <div id="top-bar-spacer"></div>
                 <h1>Du bist gefangen !!!</h1>
-                <p id="story-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, dolores praesentium! Odit laborum provident dolorem debitis ipsam aut, unde, in quaerat deleniti, quasi ducimus sit cupiditate dicta temporibus quibusdam reprehenderit?</p>
+                <p id="story-text" style="color: azure;">
+                    Alles ist dunkel und du weist nicht wo du bist. 
+                    Ein schimmern zieht deine Aufmerksamkeit auf sich. 
+                    In der Ecke siehst du einen leuchtenden kleinen Alublock mit Blindenschrift darauf. 
+                    Du krabbelst vorsichtig auf den Block zu und findest ein 3D Muster auf dem Boden. 
+                    Du guckst nach oben und fühlst an der Wand, eine Glastür du freust dich, stehst auf und versuchst die Türklinke zu finden. 
+                    Nach fünf Minuten hast du keine Türklinke gefunden.
+                    Du streichst erneut über das Muster vor der Tür. 
+                    Du kannst nicht erkennen was für ein Muster das ist. 
+                    Du konzentrierst dich wieder auf den Block, auf ihm steht Blindenschrift und darunter ein Satz.
+                </p>
             </div>
 
         </header>
@@ -49,15 +59,16 @@
                 <div id="quiz-container" class="quiz-container">
                     <div class="question-container">
                         <div class="question-text">
-                            Du siehst zwei Bilder das eine zeigt einen Satz in  Blindenschrift mit dem dext darunter. 
-                            Auf dem zweiten Bild erkennst du Blindenschrift sie enthät ein WOrt welches die Lösung zu der F4rage:
+                            Das Muster zeigt Blindenschrift! rufst du freudig
+                            und das Muster besteht aus drei Tasten.
+                            Entschlüssele die Codes mithilfe des Aluminium Blocks und wähle die richtige Antwort.
                         </div>
                     </div>
                     <div id="quiz-button-container">
                         <button id="ansbtnA" class="btn" alt="" onclick="checkAnswer('a', 1, 'c')"> ⠋ ⠁ ⠇ ⠎ ⠉ ⠓</button>
                         <button id="ansbtnB" class="btn" alt="" onclick="checkAnswer('b', 1, 'c')"> ⠕ ⠼ ⠑ ⠼ ⠨ ⠡ ⠍</button>
                         <button id="ansbtnC" class="btn" alt="" onclick="checkAnswer('c', 1, 'c')">⠗ ⠊ ⠉ ⠓ ⠞ ⠊ ⠛</button>
-                        <div id="timer" class="warning-text hidden">Remaining time: <span id="remainingSeconds"></span> seconds</div>
+                        <div id="timer" class="warning-text hidden">Falsche Antwort: <span id="remainingSeconds"></span> seconds</div>
                     </div>
                 </div>
             </div>
