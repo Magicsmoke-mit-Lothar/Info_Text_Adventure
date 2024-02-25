@@ -26,3 +26,7 @@ body{
     margin: 5%;
 }
 
+.btn:hover{
+    border: 5px solid #0cc9ab;
+}
+

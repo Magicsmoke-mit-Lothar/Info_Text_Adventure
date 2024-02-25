@@ -156,9 +156,11 @@ height: 12svh;
   gap: 1svh;
 }
 
+#help-button{
+  display: none;
+}
 
-#LVL-button,
-#help-button {
+#LVL-button {
   padding: 5px 10px;
   background: transparent;
   color: #0cc9ab;
@@ -178,8 +180,7 @@ height: 12svh;
   font-size: 2rem;
 }
 
-#LVL-button:hover,
-#help-button:hover {	
+#LVL-button:hover {	
   border: 5px solid #0cc9ab;
   border-radius: 15px;
 

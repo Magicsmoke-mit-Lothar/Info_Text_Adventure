@@ -21,8 +21,8 @@
     <div id="windowContainer">
       <div id="windowContent">
         <button id="closeWindow"><img src="../resources/images/navigate-back-arrow.png" alt="Close LVL Overview" width="20%">Level Overview</button>
-        <button class="LVL-buttons">Level 1</button>
-        <button class="LVL-buttons">Level 2</button>
+        <a href="stage1.html" class="level-completed"><button class="LVL-buttons">Level 1</button></a>
+        <button class="LVL-buttons">Level 2</button></a>
         <button class="LVL-buttons">Level 3</button>
         <button class="LVL-buttons">Level 4</button>
         <button class="LVL-buttons">Level 5</button>
@@ -37,14 +37,17 @@
 
   <main>
     <!--Mach hier die Wichtigsten sachen rein z.B quiz-->
-    <div class="cstm-spacer"></div>
+    <div class="cstm-spacer">
+      r><br><br><br><br><br><br>
+            Was ergibt 5+6*789*45*7?
+    </div>
     <div class="quiz-content">
       <div id="quiz-container" class="quiz-container">
         <div id="quiz-button-container">
-          <button id="ansbtnA" class="btn" alt="" onclick="checkAnswer('a', 2, 'c')"> ⠋ ⠁ ⠇ ⠎ ⠉ ⠓</button>
-          <button id="ansbtnB" class="btn" alt="" onclick="checkAnswer('b', 2, 'c')"> ⠕ ⠼ ⠑ ⠼ ⠨ ⠡ ⠍</button>
-          <button id="ansbtnC" class="btn" alt="" onclick="checkAnswer('c', 2, 'c')">⠗ ⠊ ⠉ ⠓ ⠞ ⠊ ⠛</button>
-          <div id="timer" class="warning-text hidden">Remaining time: <span id="remainingSeconds"></span> seconds</div>
+          <button id="ansbtnA" class="btn" alt="" onclick="checkAnswer('a', 2, 'c')"> 577888</button>
+          <button id="ansbtnB" class="btn" alt="" onclick="checkAnswer('b', 2, 'c')"> 16786727</button>
+          <button id="ansbtnC" class="btn" alt="" onclick="checkAnswer('c', 2, 'c')"> 1491215 </button>
+          <div id="timer" class="warning-text hidden">Das ist die falsche Lösung: <span id="remainingSeconds"></span> seconds</div>
       </div>
           <div class="question-container">
               <div class="question-text">
@@ -61,8 +64,6 @@
 
   
 <h1 class="h1"> 
-  
-  <font color="black"> <font size=2> Du musst die Aufgabe von Herr Rublack richtig lösen um Weiter zu kommen </font> 
    
 
 </h1>

@@ -80,8 +80,13 @@ function checkAnswer(ans, lvl, rightAns) {
   console.log(ans);
   if(ans == rightAns){
     let nlvl = lvl + 1;
-    window.location.href = "stage" + nlvl + ".html";
-    document.getElementById("timer").classList.add("hidden");
+    if(lvl == 7){
+      window.location.href = "ende.html";
+    }
+    else{
+      window.location.href = "stage" + nlvl + ".html";
+      document.getElementById("timer").classList.add("hidden");
+    }
   }
   else{
     getRemainingSeconds = setCountdown(31);

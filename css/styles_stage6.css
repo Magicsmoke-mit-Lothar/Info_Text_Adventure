@@ -84,4 +84,7 @@ div.inputbutton {
     right: 10px;
   }
 
-.btn{font-weight: 1000;}
+.btn{
+    font-weight: 1000;
+    height: 10svh;
+}

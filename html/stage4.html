@@ -38,9 +38,9 @@
     <div id="windowContainer">
       <div id="windowContent">
         <button id="closeWindow"><img src="../resources/images/navigate-back-arrow.png" alt="Close LVL Overview" width="20%">Level Overview</button>
-        <button class="LVL-buttons">Level 1</button>
-        <button class="LVL-buttons">Level 2</button>
-        <button class="LVL-buttons">Level 3</button>
+        <a href="stage1.html" class="level-completed"></a><button class="LVL-buttons">Level 1</button></a>
+        <a href="stage2.html" class="level-completed"></a><button class="LVL-buttons">Level 2</button></a>
+        <a href="stage3.html" class="level-completed"></a><button class="LVL-buttons">Level 3</button></a>
         <button class="LVL-buttons">Level 4</button>
         <button class="LVL-buttons">Level 5</button>
         <button class="LVL-buttons">Level 6</button>
@@ -51,8 +51,8 @@
 
     <main>
       <img id="bild3" src="../resources/images/schlange_stage4.png" alt="bild3">
-    <input id="ansbtnA" class="btn" type="image" src="../resources/images/Pfeil_oben.png" alt="bild1" onclick="checkAnswer('a', 4, 'b')">
-    <input id="ansbtnB" class="btn" type="image" src="../resources/images/Pfeil_links.png" alt="bild2" onclick="checkAnswer('b', 4, 'b')">
+      <input id="ansbtnA" class="btn" type="image" src="../resources/images/pfeil_oben.png" alt="" onclick="checkAnswer('a', 5,'b')">
+      <input id="ansbtnB" class="btn" type="image" src="../resources/images/pfeil_links.png" alt="" onclick="checkAnswer('b', 5, 'b')">
     <div id="timer" class="warning-text hidden">Remaining time: <span id="remainingSeconds"></span> seconds</div>
   </main>
 

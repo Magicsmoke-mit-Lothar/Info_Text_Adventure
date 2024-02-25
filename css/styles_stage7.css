@@ -10,3 +10,9 @@ body{
     justify-content: center;
     align-items: flex-end;
 }
+
+.btn{
+    height: 10svh;
+    font-size: 0.8rem;
+    font-weight: 700;
+}

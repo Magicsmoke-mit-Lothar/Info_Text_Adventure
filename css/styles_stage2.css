@@ -5,6 +5,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+  width: 100svw;
 }
 
 .h1 {
@@ -17,4 +19,9 @@ body {
 .cstm-spacer{
   height: 50svh;
   width: 100%;
+  padding-left: 7%;
+  text-align: left;
+  font-size: xx-large;
+  font-weight: 900;
+  color: black;
 }

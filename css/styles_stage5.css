@@ -1,0 +1,28 @@
+body{
+    background: url(../resources/images/stage5-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100svh;
+    width: 100svw;
+    overflow: hidden;
+}
+
+#ansbtnA{
+    background: none;
+    transform: rotate(90deg);
+    border-radius: 20px;
+    width:5%;
+    position:absolute;
+    top:70vh;
+    left:65%;
+}
+
+#ansbtnB{
+    background: none;
+    transform: rotate(-90deg);
+    border-radius: 20px;
+    width: 5%;
+    position:absolute;
+    top:80svh;
+    left:65%;
+}

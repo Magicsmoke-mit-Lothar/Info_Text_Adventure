@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt HTML</title>
   <link rel="stylesheet" href="../css/styles_stages.css">
-  <link rel="stylesheet" href="../css/styles_stage3.css">
+  <link rel="stylesheet" href="../css/styles_stage5.css">
 </head>
  
 <body>
+
   <header>
     <div id="top-bar">
       <div class="top-bar-title"><a href="../html/index.html"><button class="home-button">HTML-Adventure</button></a></div>
       <div class="top-bar-buttons">
         <button id="help-button">?</button>
-        <button id="LVL-button">LVL.3</button>
+        <button id="LVL-button">LVL.5</button>
       </div>
     </div>
 
@@ -23,36 +24,29 @@
         <button id="closeWindow"><img src="../resources/images/navigate-back-arrow.png" alt="Close LVL Overview" width="20%">Level Overview</button>
         <a href="stage1.html" class="level-completed"><button class="LVL-buttons">Level 1</button></a>
         <a href="stage2.html" class="level-completed"><button class="LVL-buttons">Level 2</button></a>
-        <button class="LVL-buttons">Level 3</button></a>
-        <button class="LVL-buttons">Level 4</button>
+        <a href="stage3.html" class="level-completed"><button class="LVL-buttons">Level 3</button></a>
+        <a href="stage4.html" class="level-completed"><button class="LVL-buttons">Level 4</button></a>
         <button class="LVL-buttons">Level 5</button>
         <button class="LVL-buttons">Level 6</button>
         <button class="LVL-buttons">Level 7</button>
       </div>
     </div>
-    <div class="top-bar-spacer"></div>
-    <div style="height: 20svh; width: 100%;"></div>
-    <h2 style="width: 100svw; text-align: left; margin: 4%; color: black;">
-      Die Tür zu den LER Räumen ist zu. <br>
-      Wähle das richtige Werkzeug um die Tür zu öffnen.
-    </h2>
+    <!--Mach hier die Header sachen rein Kopfzeile und so  lass das oben drüber-->
   </header>
 
 
   <main>
+    <!--Mach hier die Wichtigsten sachen rein z.B quiz-->
     <div class="quiz-content">
       <div id="quiz-container" class="quiz-container">
-        <div id="quiz-button-container">
-          <input width="30svw" id="ansbtnA" class="btn" type="image" src="../resources/images/Bohrmaschin.png" alt="" style="background: none;" onclick="checkAnswer('a', 3, 'c')">
-          <input width="30svw" id="ansbtnB" class="btn" type="image" src="../resources/images/Schraubenzieher.png" alt="" style="background: none;" onclick="checkAnswer('b', 3, 'c')">
-          <input width="30svw" id="ansbtnC" class="btn" type="image" src="../resources/images/Brechstange.png" alt="" style="background: none;" onclick="checkAnswer('c', 3, 'c')">
-          <div id="timer" class="warning-text hidden">
-            Damit kommst du leider nicht durch: <span id="remainingSeconds"></span> seconds remaining</div>
-          </div>
           <div class="question-container">
               <div class="question-text">
+                  <!--heir kommt deine Frage hin-->
               </div>
           </div>
+          <input id="ansbtnA" class="btn" type="image" src="../resources/images/pfeil_links.png" alt="" onclick="checkAnswer('a', 5,'b')">
+          <input id="ansbtnB" class="btn" type="image" src="../resources/images/pfeil_links.png" alt="" onclick="checkAnswer('b', 5, 'b')">
+          <div id="timer" class="warning-text hidden">Remaining time: <span id="remainingSeconds"></span> seconds</div>
       </div>
   </div>
   </main>
@@ -64,7 +58,6 @@
 
     <script defer src="../js/stages.js"></script>
     <script defer src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
-
   </body>
 
 </html> 
