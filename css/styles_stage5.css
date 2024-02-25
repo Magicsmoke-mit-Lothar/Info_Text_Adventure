@@ -26,3 +26,9 @@ body{
     top:80svh;
     left:65%;
 }
+
+#timer{
+    position:absolute;
+    top:75vh;
+    left:65%;
+}
